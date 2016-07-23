@@ -7,7 +7,7 @@ var express			= require('express'),
 	config			= require('./config'),
 	validator 		= require('validator'),
 	md5 			= require('md5'),
-	User			= require('./app/models/user');
+	User			= require('./models/user');
 
 var port = process.env.PORT || 3000;
 
