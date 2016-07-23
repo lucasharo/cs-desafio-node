@@ -72,9 +72,12 @@ app.post('/signup', function(req, res) {
 					user.save(function(err) {
 						if (err){
 							console.log(err);
+							
+							res.status(500).send({ success: false, mensagem: "Erro ao tentar efetuar cadastro, tente novamente" });
 						}else{
+							user.senha = null;
 						
-						var token = jwt.sign(user, app.get('superSecret'));
+							var token = jwt.sign(user, app.get('superSecret'));
 						
 							res.json({
 								success: true,
