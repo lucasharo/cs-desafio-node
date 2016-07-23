@@ -1,0 +1,21 @@
+{
+  "name": "cs-desafio-node",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^5.7.0",
+    "mocha": "^2.5.3",
+    "mongoose": "^4.5.5",
+    "morgan": "^1.7.0",
+    "validator": "^5.5.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "request": "*"
+  }
+}
